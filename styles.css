@@ -1,0 +1,517 @@
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Instructions: rename this file to styles.css and complete each TODO block.
+*/
+
+
+
+
+
+/* ===== Base styles (mostly done) ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  /* TODO A (Flexbox):
+     Make the brand appear on the left and the navigation on the right.
+     Requirements:
+       - Use flexbox
+       - Center items vertically
+       - Put space between left and right
+  */
+}
+
+
+/* THIS IS MY HEADER INNER */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.brand .dot {
+  /* TODO B (Color):
+     Make the dot a light blue accent color (choose a readable blue).
+  */
+}
+
+
+/* THIS IS MY BRAND DOT */
+.brand .dot {
+  color: #4da6ff;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+
+
+
+
+
+/* ===== Hero ===== */
+.hero {
+  /* TODO C (Background image hero):
+     Turn this into a hero banner with a background image.
+     Requirements:
+       - Use a background image URL (use the one below)
+       - Make it cover the area and center it
+       - Add a light overlay so text is readable (hint: use a linear-gradient + image)
+       - Set a minimum height (e.g., 360px)
+  */
+  /* My image:
+     https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60
+  */
+}
+
+
+/* THIS IS MY HERO SECTION */
+.hero {
+  background-image:
+  linear-gradient(rgba(255,240,245.70), rgba(255,255,255,0.70)), 
+  url("images/skincare-showcase.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+}
+
+
+.hero-content {
+  /* TODO D (Center content):
+     Center the hero text horizontally.
+     Add vertical padding so it doesn't feel cramped.
+  */
+}
+
+
+/* THIS IS MY HERO CONTENT */
+.hero-content {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  margin: 0;
+  /* TODO E (Typography):
+     Make the headline large and uppercase.
+     (e.g., font-size around 42–48px, text-transform uppercase)
+  */
+}
+
+/* THIS IS MY .HERO CONTENT */
+.hero h1 {
+  margin: 0;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  /* TODO F (Typography):
+     Make this slightly smaller than h1 and a softer color.
+     (e.g., font-size ~20–24px; color #555)
+  */
+}
+
+/* THIS IS MY HERO SUBHEAD */
+.hero-subhead {
+  margin: 6px 0 22px;
+  font-size: 26px;
+  color: #444;
+}
+
+
+
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-dark {
+  /* TODO G (Button styling):
+     Make this a dark filled button with white text.
+     (e.g., background #333; color #fff)
+  */
+}
+
+/* THIS IS MY BTN DARK */
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-outline {
+  /* TODO H (Button styling):
+     Make this an outlined button with a blue border and matching text.
+     (e.g., border: 2px solid ...; color: ...; background: transparent)
+  */
+}
+
+/* THIS IS MY BTN OUTLINE */
+.btn-outline {
+  border: 2px solid #2f7fbf;
+  color: #2f7fbf;
+  background: transparent;
+}
+
+/* ===== Features (3 columns) ===== */
+.features {
+  padding: 42px;
+}
+
+.features-grid {
+  /* TODO I (Layout):
+     Arrange the three feature blocks in a row (desktop).
+     Requirements:
+       - Use flexbox
+       - Add a gap between items (e.g., 26px)
+  */
+}
+
+/* THIS IS MY FEATURES GRID */
+.features-grid {
+  display: flex;
+  gap: 26px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.feature {
+  /* TODO J (Sizing / alignment):
+     Make each feature take equal width and center its text.
+  */
+}
+
+/* THIS IS MY .FEATURE */
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.feature p {
+  font-size: 12px;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 25px auto 12px;
+  color: #666;
+  font-size: 22px;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ===== Featured content ===== */
+.featured {
+  padding: 1px 0 30px;
+  background: #FFEAE6;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-title {
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.mini-subhead {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #444;
+  font-size: 20px;
+}
+
+.media {
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.media img {
+  width: 65%;
+  height: auto;
+  object-fit: contain;
+}
+
+.before,
+.after {
+  width: 40%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.before p,
+.after p {
+  margin-top: 3px;
+}
+
+
+
+
+/* ===== Secondary content (2 cards) =====  */
+.secondary {
+  padding: 10px 0 44px;
+}
+
+.secondary-grid {
+  /* TODO K (Layout):
+     Put the two cards next to each other on desktop.
+     Requirements:
+       - Use flexbox
+       - Add a gap (e.g., 26px)
+  */
+}
+
+/* THIS IS MY SECONDARY GRID */
+.secondary-grid {
+  display: flex;
+  gap: 26px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card {
+  /* TODO L (Card styling):
+     Give each card a border and make it take equal width.
+     (Hint: flex: 1; border: 1px solid #eee)
+  */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* THIS IS MY .CARD */
+.card {
+  flex: 1;
+  border: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 12px;
+}
+
+.card-image {
+  min-height: 160px;
+  /* TODO M (Image block):
+     Make the card image behave like a background image:
+       - cover
+       - centered
+  */
+}
+
+/* THIS IS MY CARD IMAGE */
+.card-image {
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+ }
+
+
+/* Optional images (already provided) */
+
+/* THIS IS IMAGE A */
+.img-a {
+  background-image: url("images/reviews.png");
+}
+
+
+/* THIS IS IMAGE B */
+.img-b {
+  background-image: url("images/tool.jpg");
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #FFEAE6;
+  padding: 15px 0;
+}
+
+.cta-inner {
+  /* TODO N (Center CTA):
+     Center the CTA text and button.
+  */
+}
+
+/* THIS IS MY CTA INNER */
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  margin-top: 10px;
+
+}
+
+.cta-inner p {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.cta-inner a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: #333;
+  font-size: 12px;
+}
+
+.cta-inner a:hover {
+  background: #555;
+  color: white;
+}
+
+
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 1px 0;
+}
+
+.footer-inner {
+  /* TODO O (Footer layout):
+     Arrange footer-left on the left and footer link columns on the right.
+     Requirements:
+       - Use flexbox
+       - Add a gap (e.g., 24px)
+       - Space items out (left/right)
+  */
+}
+
+/* THIS IS MY FOOTER INNER */
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: flex-start;
+}
+
+.footer-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-inner li {
+  margin: 10px 0;
+}
+
+.footer-inner li a {
+  font-size: 15px;
+  color: #666;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #666;
+  font-size: 16px;
+}
+
+.footer-left a { color: #3a88a8; }
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
